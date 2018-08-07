@@ -1,0 +1,215 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/css/materialize.min.css">
+
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/js/materialize.min.js"></script>
+            
+    <!-- import icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!--Import materialize.css-->
+    <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+  
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <script src="main.js"></script>
+  </head>
+  <mat-sidenav-container class="example-container">
+      <mat-sidenav #sidenav mode="side" [(opened)]="opened" class="sidenav" style="background: grey;  color: white; width: 250px;">
+        <div class="sidenav-1">
+            <img src="../assets/images/myself.jpg" alt="">
+        </div>
+        <strong style="margin-left: 35px; font-size: 22px;">Gagandeep Kaur</strong>
+        <div class="links" style="margin-top: 50px; width: 250px; height: 50px; margin-left: 30px;">
+          <a href="mailto:gunnypari@gmail.com?subject=subject%20Text%20Here" class="fa fa-envelope" style="color: #fff;font-size: 30px; "></a>
+          <a href="https://www.linkedin.com/in/kaur-gagandeep/"  class="fa fa-linkedin" style="color: #fff; font-size: 30px;"></a>
+          <a href="https://github.com/kaurgdeep"  class="fa fa-github" style="color: #fff; font-size: 30px;"></a>
+          
+        </div>
+        <div style="margin-top: 20px; width: 250px; height: 50px; margin-left: 30px;">
+          <a [routerLink]="['/home']" style="color: #fff; font-size: 30px"><i class="fa fa-home"> </i>Home</a>
+        </div>
+        <div style="margin-top: 20px; width: 250px; height: 50px; margin-left: 30px;">
+            <a [routerLink]="['/projects']" style="color: #fff; font-size: 20px;"><i class="fa fa-code fa-2x"></i>Projects</a>
+        </div>
+        <div style="margin-top: 20px; width: 250px; height: 50px; margin-left: 30px;">
+            <a href="tel:206-407-5018" style="color: #fff; font-size: 20px;"><i class="fa fa-phone"></i>Contact me</a>  
+            
+        </div>
+        
+       
+      </mat-sidenav>
+    
+    <mat-sidenav-content>
+    
+      <body>
+        <div class="body-container">
+            <img src="../assets/images/macimg.jpg" alt="">
+        </div>
+        <div class="top-fixed-bar">
+            <div class="top-sidenav-btn">
+              <!-- <a href="#" class="fa fa-bars" style="color: #fff"></a> -->
+              <button mat-button (click)="sidenav.toggle()" style="color: #fff; font-size: 33px;"><i class="fa fa-bars"></i></button>
+              <a [routerLink]="['/home']" class="fa fa-home" style="color: #fff; font-size: 33px"></a>
+            </div>
+            <div class="top-right-bar">
+              <div class="social-links">
+                <a href="mailto:gunnypari@gmail.com?subject=subject%20Text%20Here" class="fa fa-envelope" style="color: #fff"></a>
+                <!-- <a href="" class="fa fa-twitter" style="color: #fff"></a> -->
+                <a href="https://www.linkedin.com/in/kaur-gagandeep/"  class="fa fa-linkedin" style="color: #fff"></a>
+                <a href="https://github.com/kaurgdeep"  class="fa fa-github" style="color: #fff"></a>
+                
+              </div>
+            </div>
+          </div>
+        <div>
+          <mat-tab-group dynamicHeight>
+            <mat-tab label="Welcome">
+                <div class="welcome">
+                  <strong class="strong">Aspiring Software Developer, looking for Junior Developer positions.
+                      Enthusiastic and fast learner acquiring programming languages and web frameworks.
+                      I am an innovative, performance-focused, and dynamic professional and
+                      passionate about software development and the constant demand for growth it inspires in me.
+                      I love working with fun people to solve complex and challenging problems. 
+                    </strong> 
+                </div>
+            </mat-tab>
+            <mat-tab label="About">
+              <div class="box">
+                <div id="info">
+                  <div class="info-myself">
+                    <h5>Gagandeep Kaur</h5>
+                    <p>Hi! Welcome! I am a full-stack developer that has fallen in love with the industry of problem-solving. 
+                      Whether it be a creative or technical approach, software development has become
+                      a true passion of mine. 
+                    </p>
+                  </div>
+                  <div class="edu">
+                      <h5>Education</h5>
+                      <p>
+                        <strong class="strong">Coding Dojo(bootcamp)</strong>
+                        Coding Dojo is an immersive web development bootcamp specialized in full stack training for HTML, CSS, JS, Python, C# and MEAN (MongoDB, Express, Angular, Node). Coding Dojo trains students to be highly competitive with the latest technologies and equips them wit
+                          to quickly and efficiently learn new and emerging technologies for an ever evolving industry.
+                      </p>
+
+                      <strong class="strong"> I have accomplished:</strong> 
+                        <ul style="padding: 15px;">
+                          <li  style="list-style-type:disc">Yellow Belt in web-fundamentals</li>
+                          <li style="list-style-type:disc">Black Belt in Python</li>
+                          <li style="list-style-type:disc">Red Belt in C#</li>
+                          <li style="list-style-type:disc">Red Belt in Mean-Stack</li>
+                        </ul>
+                      <h5>High School(India)</h5>
+                      <p> <strong class="strong">Major: Mathematics, Physics, Chemistry</strong></p>
+                    
+                  </div>
+
+                </div>
+                <div class="info">
+                  <div class="img">
+                    <img src="../assets/images/myself.jpg">
+                  </div>
+                  <div class="skills" style="padding: 25px;">
+                      <h5>Technologies</h5>
+                      <strong class="strong">Languages:</strong>
+                      <ul>
+                        <li  style="list-style-type:disc">HTML, CSS, Javascript</li>
+                        <li style="list-style-type:disc">PYTHON</li>
+                        <li style="list-style-type:disc">C#</li>
+                        <li style="list-style-type:disc">Mean</li>
+                      </ul>
+                      
+                      <strong class="strong">Libraries/Frameworks/CMS:</strong>
+                      <ul>
+                        <li  style="list-style-type:disc">Angular, Express, Node</li>
+                        <li style="list-style-type:disc">Flask Django, Jquery</li>
+                        <li style="list-style-type:disc">Entity, ASP.NET</li>
+                        <li style="list-style-type:disc">AWS, Ajax</li>
+                      </ul>
+                      <strong class="strong">Database:</strong>
+                      <ul>
+                        <li  style="list-style-type:disc">MySQL</li>
+                        <li style="list-style-type:disc">MongoDB</li>
+                      </ul>
+                  </div>
+                </div>
+              </div>
+            </mat-tab>
+            <mat-tab label="Experience">
+              <div class="box">
+                <div class="box2">
+                    <div class="exp">
+                        <h4>Currently</h4>
+                        <strong class="strong">Actively looking for a new and exciting role as a Software Developer</strong>
+                        <p>I am a full stack developer with training in Python, C# and Mean. I’ve blended my education from an immersive, comprehensive coding program.
+                          I utilize my strong communication and problem-solving skills to provide a fresh new approach to 
+                          any project. I'm fast learner with strong time management and multi-tasking skills.
+                          Strong work ethic in team or individual settings to drive product success and process
+                          efficiency. Strong troubleshooting and problem solving skills with an analytical mindset. 
+                          I am excited to find a passionate, innovative team to work with, and jump into this exciting, ever-changing industry as a Software developer. </p>
+                      </div>
+
+                  <div class="exp">
+                    <h4>Experience</h4>
+                    <strong class="strong">WELLS FARGO(Teller 12/2017 to 04/2018)</strong>
+                    <p><strong class="strong">Duties:</strong></p>
+                    <ul>
+                        <li  style="list-style-type:disc"> Process deposits, withdrawals and other banking transactions for a high volume of customers </li>
+                        <li style="list-style-type:disc">Sell or redeem savings bonds and other financial instruments </li>
+                        <li style="list-style-type:disc">Satisfy our customers’ financial needs and help them succeed financially. </li>
+                        <li style="list-style-type:disc">Always balance cash drawers, build great rapport with people, and be strong team player. </li>
+                      </ul>
+                  </div>
+                  <div class="exp">
+                    <strong class="strong">FRED MEYER(Cashier 08/2017 to 12/2017)</strong>
+                    <p><strong class="strong">Duties:</strong></p>
+                    <ul>
+                        <li  style="list-style-type:disc">Rotated merchandise, organized shelves, and put out new stock. </li>
+                        <li style="list-style-type:disc">Maintained friendly attitude and followed all store interaction protocols while answering customer questions and processing payments. </li>
+                        <li style="list-style-type:disc">Recommended additional items for future purchase.</li>
+                      </ul>
+                  </div>
+                  <div class="exp">
+                    <strong class="strong">Deeva Salon( Cashier and front desk receptionist 09/2015 to 08/2017)</strong>
+                    <p><strong class="strong">Duties:</strong></p>
+                    <ul>
+                        <li  style="list-style-type:disc"> Managed receptionist area, including greeting visitors and responding to telephone and in-person requests for information. </li>
+                        <li style="list-style-type:disc">Wrote reports and correspondence from dictation and handwritten notes. </li>
+                        <li style="list-style-type:disc">Maintained the front desk and reception area in a neat and organized fashion. </li>
+                        <li style="list-style-type:disc">Posted open positions on company and social media websites. </li>
+                      </ul>
+                  </div>
+                  <div class="exp">
+                    <strong class="strong">Skoulakis-Concord Premium Meats( Accountant and machine operator 6/2011 to 07/2015 )</strong>
+                    <p><strong class="strong">Duties:</strong></p>
+                  
+                    <ul>
+                        <li  style="list-style-type:disc"> Answer customer telephone calls regarding existing accounts. </li>
+                        <li style="list-style-type:disc">Respond to questions and concerns about service, and escalate calls appropriately. </li>
+                        <li style="list-style-type:disc">Consistently improve customer satisfaction through expert resolution of conflicts, issues, and concerns </li>
+                        <li style="list-style-type:disc">Consult with customers to evaluate needs and determine best options. </li>
+                      </ul>
+                  </div>
+                </div>
+              </div>
+            </mat-tab>
+            <mat-tab label="Certification">certification
+              <div class="certification">
+                <img src="../assets/images/certificate.jpg">
+              </div>
+            </mat-tab>  
+          </mat-tab-group>
+        </div>
+      </body>
+    </mat-sidenav-content>
+  </mat-sidenav-container>
+
+</html>
+

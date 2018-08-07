@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+  <head>
+      <script src="https://ajax.googleapis.com/ajax/libs/ext-core/3.1.0/ext-core.js"></script>
+     <!-- Compiled and minified CSS -->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/css/materialize.min.css">
+
+     <!-- Compiled and minified JavaScript -->
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/js/materialize.min.js"></script>
+    <!-- import icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src= 'http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js'></script>
+    <!--Import materialize.css-->
+    <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+   
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  </head>
+ 
+  <mat-sidenav-container class="example-container">
+    <mat-sidenav #sidenav mode="side" [(opened)]="opened" class="sidenav" style="background: black;  color: white; width: 250px;">
+      <div class="sidenav-1">
+          <img src="../assets/images/myself.jpg" alt="">
+      </div>
+      <strong style="margin-left: 35px; font-size: 22px;">Gagandeep Kaur</strong>
+      <div class="links" style="margin-top: 50px; width: 250px; height: 50px; margin-left: 30px;">
+        <a href="mailto:gunnypari@gmail.com?subject=subject%20Text%20Here" class="fa fa-envelope" style="color: #fff;font-size: 30px; "></a>
+        <a href="https://www.linkedin.com/in/kaur-gagandeep/"  class="fa fa-linkedin" style="color: #fff; font-size: 30px;"></a>
+        <a href="https://github.com/kaurgdeep"  class="fa fa-github" style="color: #fff; font-size: 30px;"></a>
+        <!-- <a [routerLink]="['/home']" class="fa fa-home" style="color: #fff; font-size: 30px"></a> -->
+      </div>
+      <div style="margin-top: 20px; width: 250px; height: 50px; margin-left: 30px;">
+          <a [routerLink]="['/work']"><i class="fa fa-user"></i>Profile</a>
+      </div>
+      <div style="margin-top: 20px; width: 250px; height: 50px; margin-left: 30px;">
+          <a [routerLink]="['/projects']"><i class="fa fa-code fa-2x"></i>Projects</a>
+      </div>
+      <div style="margin-top: 20px; width: 250px; height: 50px; margin-left: 30px;">
+          <a [routerLink]="['/work']"><i class="fa fa-user"></i>About</a>
+      </div>
+      <div style="margin-top: 20px; width: 250px; height: 50px; margin-left: 30px;">
+          <a href="tel:206-407-5018"><i class="fa fa-phone"></i>Contact me</a>  
+          
+      </div>
+      
+     
+    </mat-sidenav>
+  
+    <mat-sidenav-content>
+
+    <body id="wrapper">
+      <div class="big-pattern">
+          <div class="slider-fullscreen">
+            <div class="slider-fullscreen-ul">
+              <div class="slider-fullscreen-li">
+                <img id="slide-img-1" src="../assets/images/snow.jpg" alt="">
+                <div class="name-animation">The best way to predict the future is to invent it</div>
+              </div>
+              <div class="slider-fullscreen-li">
+                  
+                  <img id="slide-img-1" src="../assets/images/Flowers.jpg" alt="">
+                  <div class="name-animation">Past cannot be changed,the future is yet in your power</div>
+                
+              </div>
+            </div>
+          </div>
+      </div>
+      <div class="top-fixed-bar">
+        <div class="top-sidenav-btn"><button mat-button (click)="sidenav.toggle()" class="fa fa-bars" style="color: #fff;"></button></div>
+        <div class="top-right-bar">
+          <div class="social-links">
+            <a href="mailto:gunnypari@gmail.com?subject=subject%20Text%20Here" class="fa fa-envelope" style="color: #fff"></a>
+            <a href="https://www.linkedin.com/in/kaur-gagandeep/"  class="fa fa-linkedin" style="color: #fff"></a>
+            <a href="https://github.com/kaurgdeep"  class="fa fa-github" style="color: #fff"></a>
+          </div>
+        </div>
+      </div>
+      <div class="main">
+        <h1>GAGANDEEP KAUR</h1>
+        <div class="buttons">  
+          <a [routerLink]="['/work']" class="waves-effect waves-light btn-large opac-btn" href="#">Profile</a>
+          <a [routerLink]="['/projects']" class="waves-effect waves-light btn-large opac-btn" href="#">Projects</a>
+        </div>
+      
+      </div>
+   
+      </body>
+    </mat-sidenav-content>
+  </mat-sidenav-container>
+  
+    <!--JavaScript at end of body for optimized loading-->
+    <script type="text/javascript" src="js/materialize.min.js"></script>
+</html>
