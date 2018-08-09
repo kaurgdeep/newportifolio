@@ -210,10 +210,11 @@ header h1 {
 
 }
 .mat-tab-label{
-  background-color: #fff; 
+  background-color: white; 
   align-items: center;
   margin-left: 140px;
   opacity: 2px;
+  color: black;
   
 }
 .box {
@@ -225,7 +226,9 @@ header h1 {
   padding: 16px;
   border-radius: 8px;
   background:#ededed;
+  color: black;
   width: 700px;
+  
 }
 .welcome{
   /* display: flex; */
@@ -290,9 +293,11 @@ header h1 {
   display: block;
   text-align: center;
   margin-left:310px;
+  
 }
 .certification img{
   width: 670px;
+  border: 7px solid black;
   
 }
 .example-container {

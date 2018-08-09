@@ -1,0 +1,129 @@
+/*----------------------- Mixins ------------------------------ */
+.margin_reset {
+  margin: 3px 0;
+}
+/*----------------------- Container Styles ------------------------------ */
+.resume_container h1 {
+  margin: 3px 0;
+}
+.resume_container p {
+  margin: 3px 0;
+}
+* {
+  box-sizing: border-box;
+}
+/*----------------------- Grid Styles ------------------------------ */
+.grid {
+  max-width: 1024px;
+  margin: 0 auto;
+  background-color: red;
+  font-size: 62.5%;
+  font-family: 'Open Sans', sans-serif;
+  border: 4px solid grey;
+  border-radius: 5px;
+  color: white;
+  box-shadow: 3px 3px 5px 6px #ccc;
+  box-sizing: border-box;
+  display: grid;
+  grid-template-areas: "header" "main" "sidebar";
+  grid-template-rows: auto;
+}
+.experience-grid {
+  display: grid;
+  grid-template-areas: "col1" "col2";
+}
+/*----------------------- Header Styles ------------------------------ */
+.header {
+  grid-area: header;
+  background-color: #003d74;
+  padding: 15px 20px;
+}
+.header h1 {
+  font-size: 3em;
+}
+.header p {
+  font-size: 2em;
+}
+/*----------------------- Sidebar Styles ------------------------------ */
+.sidebar {
+  grid-area: sidebar;
+  background-color: #003d74;
+}
+.sidebar .sidebar-title {
+  padding: 10px;
+  background-color: #002e58;
+  padding: 10px 20px;
+  font-size: 2em;
+  font-weight: bold;
+}
+.sidebar .sidebar-item {
+  margin: 10px 20px;
+}
+.sidebar .sidebar-item-title {
+  font-size: 1.5em;
+  font-weight: bold;
+}
+.sidebar .sidebar-item-subtitle {
+  font-size: 1.5em;
+}
+/*----------------------- Main Styles ------------------------------ */
+.main {
+  color: black;
+  grid-area: main;
+  background-color: white;
+  padding: 10px 20px;
+}
+.main .description {
+  font-size: 1.5em;
+  margin: 10px 0;
+}
+.main .main-item-title {
+  font-size: 2em;
+  padding: 10px 0;
+  margin: 10px 0px;
+  border-top: 2px solid black;
+  border-bottom: 2px solid black;
+  color: #003d74;
+  font-weight: bold;
+}
+.main .col1 {
+  font-size: 1.5em;
+  grid-area: col1;
+}
+.main .col1 div {
+  margin: 5px;
+}
+.main .col2 {
+  grid-area: col2;
+}
+.main .col2 .col2-title {
+  font-weight: bold;
+  font-size: 2em;
+}
+.main .col2 .col2-location {
+  font-size: 1.5em;
+  font-style: italic;
+}
+.main .col2 div {
+  margin: 5px;
+}
+.main .col2 ul {
+  font-size: 1.5em;
+  padding: 0;
+  margin: 0 0 0 20px ;
+}
+.main .col2 li {
+  margin: 5px 0;
+}
+/*----------------------- Media Queries ------------------------------ */
+/*----------------------- Media Queries ------------------------------ */
+@media only screen and (min-width: 800px) {
+  .grid {
+    grid-template-columns: 30% 70%;
+    grid-template-areas: "header main" "sidebar main";
+  }
+  .experience-grid {
+    grid-template-columns: 20% 80%;
+    grid-template-areas: "col1 col2";
+  }
+}
